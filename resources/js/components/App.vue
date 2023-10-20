@@ -34,7 +34,6 @@ export default {
 
     metaInfo () {
         const { appName } = window.config
-
         return {
             title: appName,
             titleTemplate: `%s · ${appName}`
@@ -53,9 +52,8 @@ export default {
          */
         setLayout (layout) {
             if (!layout || !layouts[layout]) {
-            layout = this.defaultLayout
+                layout = this.defaultLayout
             }
-
             this.layout = layouts[layout]
         }
     }
